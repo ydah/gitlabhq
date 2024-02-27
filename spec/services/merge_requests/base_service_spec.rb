@@ -80,7 +80,7 @@ RSpec.describe MergeRequests::BaseService, feature_category: :code_review_workfl
     end
   end
 
-  describe `#create_pipeline_for` do
+  describe '#create_pipeline_for' do
     let_it_be(:merge_request) { create(:merge_request) }
 
     subject { MergeRequests::ExampleService.new(project: project, current_user: user, params: params) }
